@@ -1,9 +1,5 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-}
-.grid-item {
-  margin: 20px;
-  font-size: 30px;
-  text-align: center;
+  gap: 20px;
 }
