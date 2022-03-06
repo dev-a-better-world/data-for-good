@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "data-for-good",
+            "prefix": "dfg",
             "style": "kebab-case"
           }
         ]

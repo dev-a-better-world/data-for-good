@@ -2,11 +2,13 @@
   "projectType": "application",
   "root": "apps/happy-mental",
   "sourceRoot": "apps/happy-mental/src",
-  "prefix": "data-for-good",
+  "prefix": "dfg",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/happy-mental",
         "index": "apps/happy-mental/src/index.html",
@@ -18,7 +20,9 @@
           "apps/happy-mental/src/favicon.ico",
           "apps/happy-mental/src/assets"
         ],
-        "styles": ["apps/happy-mental/src/styles.scss"],
+        "styles": [
+          "apps/happy-mental/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -86,7 +90,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/happy-mental"],
+      "outputs": [
+        "coverage/apps/happy-mental"
+      ],
       "options": {
         "jestConfig": "apps/happy-mental/jest.config.js",
         "passWithNoTests": true

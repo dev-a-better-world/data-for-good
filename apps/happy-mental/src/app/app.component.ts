@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Message } from '@data-for-good/api-interfaces';
 
 @Component({
-  selector: 'data-for-good-root',
+  selector: 'dfg-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

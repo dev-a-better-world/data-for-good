@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'data-for-good-overview',
+  selector: 'dfg-overview',
   templateUrl: './overview.component.html',
   styleUrls: ['./overview.component.scss']
 })
