@@ -2,10 +2,9 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OverviewComponent } from './overview.component';
 import {Component, CUSTOM_ELEMENTS_SCHEMA, ViewChild} from "@angular/core";
-import {By} from "@angular/platform-browser";
 
 @Component({
-  template: `<data-for-good-overview #child [overview-data]="overviewData">Hello</data-for-good-overview>`
+  template: `<dfg-overview #child [overview-data]="overviewData">Hello</dfg-overview>`
 })
 class OverviewHolderComponent {
   @ViewChild('child') public overviewComponent: OverviewComponent | undefined;
