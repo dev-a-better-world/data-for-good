@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import '@vonage/vwc-card';
 
 @Component({
   selector: 'data-for-good-overview',
