@@ -4,7 +4,7 @@ import { OverviewComponent } from './overview.component';
 import {Component, CUSTOM_ELEMENTS_SCHEMA, ViewChild} from "@angular/core";
 
 @Component({
-  template: `<data-for-good-overview #child [overview-data]="overviewData">Hello</data-for-good-overview>`
+  template: `<dfg-overview #child [overview-data]="overviewData">Hello</dfg-overview>`
 })
 class OverviewHolderComponent {
   @ViewChild('child') public overviewComponent: OverviewComponent | undefined;
