@@ -13,9 +13,10 @@ import '@vonage/vwc-list/vwc-list-item';
 import { AppRoutingModule } from './app-routing.module';
 import { NgChartsModule } from 'ng2-charts';
 import { GraphComponent } from './components/graph/graph.component';
+import { UserTableComponent } from './components/user-table/user-table.component';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent, OverviewComponent, GraphComponent],
+  declarations: [AppComponent, NxWelcomeComponent, OverviewComponent, GraphComponent, UserTableComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, NgChartsModule],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
