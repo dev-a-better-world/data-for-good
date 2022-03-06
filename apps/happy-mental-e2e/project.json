@@ -1,0 +1,28 @@
+{
+  "root": "apps/happy-mental-e2e",
+  "sourceRoot": "apps/happy-mental-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/happy-mental-e2e/cypress.json",
+        "devServerTarget": "happy-mental:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "happy-mental:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/happy-mental-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["happy-mental"]
+}
