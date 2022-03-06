@@ -1,5 +1,9 @@
 <h2>Overview</h2>
 <div class="overview-wrapper grid-container">
-  <vwc-card class="grid-item" *ngFor="let data of overviewData"></vwc-card>
+  <vwc-card *ngFor="let data of overviewData">
+    <div class="grid-item" slot="media">
+      Content
+    </div>
+  </vwc-card>
 </div>
 

@@ -12,7 +12,7 @@ export interface OverviewData {
 })
 export class OverviewComponent implements OnInit {
   @Input('overview-data')
-  overviewData: OverviewData[] = [];
+  overviewData: OverviewData[] = [{type: 'pie', data: []}];
 
   constructor() { }
 
