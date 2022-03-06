@@ -1,34 +1,39 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OverviewComponent } from './overview.component';
-import {Component} from "@angular/core";
-
-let overviewInstance, componentData;
+import {Component, CUSTOM_ELEMENTS_SCHEMA, ViewChild} from "@angular/core";
+import {By} from "@angular/platform-browser";
 
 @Component({
-  template: `<data-for-good-overview [overview-data]="overviewData">Hello</data-for-good-overview>`
+  template: `<data-for-good-overview #child [overview-data]="overviewData">Hello</data-for-good-overview>`
 })
-class DialogContentComponent {
-  overviewData = [];
+class OverviewHolderComponent {
+  @ViewChild('child') public overviewComponent: OverviewComponent | undefined;
+  overviewData: number[] = [];
 }
 describe('OverviewComponent', () => {
-  let component: OverviewComponent;
-  let fixture: ComponentFixture<OverviewComponent>;
+  let component: OverviewHolderComponent;
+  let fixture: ComponentFixture<OverviewHolderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OverviewComponent ]
+      declarations: [ OverviewComponent, OverviewHolderComponent ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OverviewComponent);
+    fixture = TestBed.createComponent(OverviewHolderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should receive overview data', () => {
-    expect(component).toBeTruthy();
+  it('should receive overview data', async () => {
+    const overviewData = [1,2,3]
+    component.overviewData = overviewData;
+    await fixture.detectChanges();
+    await fixture.whenStable();
+    expect(component.overviewComponent?.overviewData).toEqual(overviewData);
   });
 });
