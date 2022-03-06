@@ -19,8 +19,10 @@ import { UserTableComponent } from './components/user-table/user-table.component
 
 import '@vonage/vwc-button';
 import '@vonage/vwc-card';
+import { OverviewGraphComponent } from './components/overview-graph/overview-graph.component';
+
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent, OverviewComponent, GraphComponent, UserTableComponent],
+  declarations: [AppComponent, NxWelcomeComponent, OverviewComponent, GraphComponent, UserTableComponent, OverviewGraphComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, NgChartsModule],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
