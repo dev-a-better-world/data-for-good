@@ -1,61 +1,14 @@
-<vwc-side-drawer position="start" alternate="" open="">
-  <div slot="top-bar">
-    <vwc-icon type="vonage-mono"></vwc-icon>
-    <vwc-text font-face="body-1-bold">VONAGE</vwc-text>
+<div class="top-menu">
+  <div class="top-menu-left">
+  <vwc-icon type="vonage-mono"></vwc-icon>
   </div>
-  <div>
-    <vwc-list innerrole="navigation" innerarialabel="Primary navigation" itemroles="link">
-      <vwc-list-item shape="rounded" graphic="icon" mwc-list-item="" role="link" tabindex="0" aria-disabled="false">
-        <vwc-icon slot="graphic" type="home-line"></vwc-icon>
-        1st level item
-      </vwc-list-item>
-      <p>
-        <vwc-text font-face="body-2-bold">SECTION TITLE</vwc-text>
-      </p>
-      <vwc-list-item shape="rounded" graphic="icon" mwc-list-item="" role="link" tabindex="-1" aria-disabled="false">
-        <vwc-icon slot="graphic" type="chat-line"></vwc-icon>
-        1st level item
-      </vwc-list-item>
-      <vwc-list-expansion-panel open="">
-        <vwc-list-item slot="header" shape="rounded" graphic="icon" mwc-list-item="" hasmeta="" tabindex="-1"
-          aria-disabled="false">
-          <vwc-icon slot="graphic" type="chat-line"></vwc-icon>
-          1st level item
-          <vwc-icon slot="meta" type="up"></vwc-icon>
-        </vwc-list-item>
-        <vwc-list-expansion-panel open="">
-          <vwc-list-item slot="header" shape="rounded" mwc-list-item="" hasmeta="" tabindex="-1" aria-disabled="false">
-            2nd level item
-            <vwc-icon slot="meta" type="up"></vwc-icon>
-          </vwc-list-item>
-          <vwc-list-item shape="rounded" mwc-list-item="" tabindex="-1" aria-disabled="false">
-            3rd level item
-          </vwc-list-item>
-          <vwc-list-item shape="rounded" mwc-list-item="" tabindex="-1" aria-disabled="false">
-            3rd level item
-          </vwc-list-item>
-        </vwc-list-expansion-panel>
-      </vwc-list-expansion-panel>
-      <p>
-        <vwc-text font-face="body-2-bold">SECTION TITLE</vwc-text>
-      </p>
-      <vwc-list-expansion-panel>
-        <vwc-list-item slot="header" shape="rounded" graphic="icon" mwc-list-item="" hasmeta="" tabindex="-1"
-          aria-disabled="false">
-          <vwc-icon slot="graphic" type="chat-line"></vwc-icon>
-          1st level item
-          <vwc-icon slot="meta" type="down"></vwc-icon>
-        </vwc-list-item>
-        <vwc-list-item shape="rounded" mwc-list-item="" tabindex="-1" aria-disabled="false">
-          2nd level item
-        </vwc-list-item>
-        <vwc-list-item shape="rounded" mwc-list-item="" tabindex="-1" aria-disabled="false">
-          2nd level item
-        </vwc-list-item>
-      </vwc-list-expansion-panel>
-    </vwc-list>
+  <div class="top-menu-right">
+    <vwc-icon type="notification-on-line"></vwc-icon>
+    <vwc-icon type="help-line"></vwc-icon>
+    <vwc-icon type="profile-line"></vwc-icon>
   </div>
-  <div class="container" slot="app-content">
-    <router-outlet></router-outlet>
-  </div>
-</vwc-side-drawer>
+</div>
+<div class="container" slot="app-content">
+  <router-outlet></router-outlet>
+  <dfg-overview-graph></dfg-overview-graph>
+</div>

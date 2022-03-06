@@ -28,6 +28,8 @@
     "@swimlane/ngx-charts": "^20.1.0",
     "@vonage/vwc-button": "^2.25.9",
     "@vonage/vwc-card": "^2.25.9",
+    "@vonage/vwc-data-grid": "^2.25.9",
+    "@vonage/vwc-icon": "^2.25.9",
     "@vonage/vwc-list": "^2.25.9",
     "@vonage/vwc-side-drawer": "^2.25.9",
     "@vonage/vwc-text": "^2.25.9",
