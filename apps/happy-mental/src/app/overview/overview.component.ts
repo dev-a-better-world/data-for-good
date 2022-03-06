@@ -1,5 +1,9 @@
 import {Component, Input, OnInit} from '@angular/core';
-import '@vonage/vwc-card';
+
+export interface OverviewData {
+  type: string;
+  data: any[] | string;
+}
 
 @Component({
   selector: 'data-for-good-overview',
@@ -8,7 +12,7 @@ import '@vonage/vwc-card';
 })
 export class OverviewComponent implements OnInit {
   @Input('overview-data')
-  overviewData: number[] = [];
+  overviewData: OverviewData[] = [];
 
   constructor() { }
 
