@@ -8,7 +8,10 @@ import { OverviewComponent } from './overview/overview.component';
 import "@vonage/vwc-list";
 import "@vonage/vwc-side-drawer";
 import "@vonage/vwc-text";
+import "@vonage/vwc-icon";
 import '@vonage/vwc-list/vwc-list-item';
+import "@vonage/vwc-data-grid"
+import "@vonage/vwc-data-grid/vwc-data-grid-column"
 import { AppRoutingModule } from './app-routing.module';
 import { NgChartsModule } from 'ng2-charts';
 import { GraphComponent } from './components/graph/graph.component';

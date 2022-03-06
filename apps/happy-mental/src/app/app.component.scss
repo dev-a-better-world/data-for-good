@@ -1,0 +1,13 @@
+.top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 18px;
+  .top-menu-left vwc-icon {
+    --icon-size: 32px;
+  }
+  .top-menu-right vwc-icon {
+    margin-left: 16px;
+  }
+}
